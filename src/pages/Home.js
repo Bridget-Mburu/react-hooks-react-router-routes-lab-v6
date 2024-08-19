@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import MovieCard from "../components/MovieCard"
 import NavBar from "../components/NavBar";
 
@@ -8,10 +8,8 @@ function Home() {
   useEffect(() => {
      fetch("http://localhost:4000/movies")
        .then((res) => res.json())
-       .then((data) => {
-         setMovies(data);
-       })
-       .catch((err) => console.log(err));
+       .then((data) => setMovies(data))
+       .catch(err => console.log(err));
   }, [])
 
   return (

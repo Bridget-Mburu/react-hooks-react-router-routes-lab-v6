@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import NavBar from "../components/NavBar";
 
 function Movie() {
-  const [movie ,setMovie] = useState([])
+  const [movie ,setMovie] = useState(null)
   const params = useParams()
   const movieId = params.id
 
@@ -16,7 +16,7 @@ function Movie() {
        .catch((err) => console.error(err));
   }, [movieId])
 
-  if(!movie.title){
+  if(!movie){
     return <h2>Loading...</h2>
 
   }

@@ -31,7 +31,7 @@ function Directors() {
       </header>
       <main>
         <h1>Directors Page</h1>
-        {directorsList}
+         {directorsList} 
       </main>
     </>
   );

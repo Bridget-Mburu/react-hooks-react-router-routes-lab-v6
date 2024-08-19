@@ -10,23 +10,23 @@ const routes = [
   {
     path: "/",
     element: <Home />,
-    errorElement: <ErrorPage />,
+    errorElement: <ErrorPage />
   },
   {
     path: "/directors",
     element: <Directors />,
-    errorElement: <ErrorPage />,
+    errorElement: <ErrorPage />
   },
   {
     path: "/actors",
     element: <Actors />,
-    errorElement: <ErrorPage />,
+    errorElement: <ErrorPage />
   },
   {
     path: "/movie/movie:id",
     element: <Movie />,
-    errorElement: <ErrorPage />,
-  },
+    errorElement: <ErrorPage />
+  }
 ];
 
 export default routes;
